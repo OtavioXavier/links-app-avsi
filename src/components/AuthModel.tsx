@@ -63,7 +63,7 @@ export default function AuthModal({ visible, onClose, onSubmit, name }: Props) {
 							</TouchableOpacity>
 						</View>
 						<TouchableOpacity style={styles.button} onPress={enviar}>
-							<Text style={styles.textButton}>Acesar</Text>
+							<Text style={styles.textButton}>Acessar</Text>
 						</TouchableOpacity>
 					</SafeAreaView>
 				</View>

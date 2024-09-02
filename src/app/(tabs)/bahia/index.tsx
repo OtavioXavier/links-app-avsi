@@ -1,7 +1,6 @@
 import AuthButton from "@/src/components/AuthButton";
 import Titulo from "@/src//components/Titulo";
 import { View, StyleSheet } from "react-native";
-import { Link } from 'expo-router';
 import { theme } from '@/src/theme';
 
 export default function BahiaScreen() {

@@ -24,8 +24,6 @@ export default function RootLayout() {
 		return null;
 	}
 
-	
-
 	return (
 		<GoProvider>
 			<View style={styles.container}>
@@ -34,7 +32,6 @@ export default function RootLayout() {
 						headerShown: false,
 					}}
 				>
-					<Stack.Screen name="(tabs)" />
 					<Stack.Screen name="index" />
 				</Stack>
 				<Image

@@ -18,7 +18,7 @@ export default function AuthButton({ title, rota, senha }: AuthProps) {
 		// if (value === senha) {
 		if(true){
 			setIsModalVisible(false);
-			router.replace(rota);
+			router.push(rota);
 		} else {
 			alert("Por favor digite a senha correta para entrar");
 		}
