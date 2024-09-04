@@ -27,13 +27,7 @@ export default function RootLayout() {
 	return (
 		<GoProvider>
 			<View style={styles.container}>
-				<Stack
-					screenOptions={{
-						headerShown: false,
-					}}
-				>
-					<Stack.Screen name="index" />
-				</Stack>
+				<Stack />
 				<Image
 					style={styles.folhagem}
 					source={require("@/src/assets/images/folhagem.png")}
