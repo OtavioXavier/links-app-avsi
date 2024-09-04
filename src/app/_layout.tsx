@@ -1,10 +1,10 @@
 import { useFonts } from "expo-font";
-import { Stack, usePathname } from "expo-router";
+import { Stack } from "expo-router";
 import * as SplashScreen from "expo-splash-screen";
 import { useEffect } from "react";
 import "react-native-reanimated";
 import { Image, StyleSheet, View } from "react-native";
-import { GoProvider } from "@/src/context/GoContext";
+import { GoProvider, useGo } from "@/src/context/GoContext";
 import { theme } from '../theme';
 
 SplashScreen.preventAutoHideAsync();
@@ -27,7 +27,16 @@ export default function RootLayout() {
 	return (
 		<GoProvider>
 			<View style={styles.container}>
-				<Stack />
+				<Stack screenOptions={{
+					headerStyle: {
+						backgroundColor: 'transparent',
+					},
+					headerShadowVisible: false,
+					headerTitle: '',
+					headerBackImageSource: require('@/src/assets/images/back-icon.png'),
+					headerTintColor: "#00a443",
+					headerTransparent: true,
+				}} />
 				<Image
 					style={styles.folhagem}
 					source={require("@/src/assets/images/folhagem.png")}
