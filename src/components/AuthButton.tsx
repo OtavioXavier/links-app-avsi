@@ -15,8 +15,8 @@ export default function AuthButton({ title, rota, senha }: AuthProps) {
 	const [isModalVisible, setIsModalVisible] = useState(false);
 
 	const handleLogin = (value: string) => {
-		// if (value === senha) {
-		if(true){
+		if (value === senha) {
+		// if(true){
 			setIsModalVisible(false);
 			router.push(rota);
 		} else {
