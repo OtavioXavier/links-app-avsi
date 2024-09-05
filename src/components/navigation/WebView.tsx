@@ -9,6 +9,11 @@ interface Props {
 
 export default function CustomWebView({ url }: Props) {
 	const { setGo } = useGo();
+
+	if(url === '') {
+		setGo(false)
+	}
+	
 	return (
 		<View style={{ flex: 1 }}>
 			<Pressable onPress={() => setGo(false)} style={styles.closeButton}>
