@@ -8,9 +8,9 @@ interface Props {
 }
 
 export default function CustomWebView({ url }: Props) {
-	const { setGo } = useGo();
+	const { setGo, go } = useGo();
 
-	if(url === '') {
+	if(url === '' && go === true) {
 		setGo(false)
 	}
 	
