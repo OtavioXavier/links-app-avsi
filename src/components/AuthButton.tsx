@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { router } from "expo-router";
 import type {Href} from "expo-router";
-import { View, Button } from "react-native";
+import { View } from "react-native";
 import AuthModal from "./AuthModel";
 import CustomButton from "./CustomButton";
 
