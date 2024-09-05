@@ -17,7 +17,7 @@ export default function EspacoMakerScreen() {
 		setGo(true);
 	};
 
-	return go ?
+	return (go && url !== '') ?
 		<CustomWebView url={url} />
 		: (
 			<View style={styles.largestContainer}>
