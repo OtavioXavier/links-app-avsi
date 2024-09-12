@@ -3,7 +3,7 @@ import { links } from "@/links";
 import { useState } from "react";
 import { useGo } from "@/src/context/GoContext";
 import CustomButton from "@/src/components/CustomButton";
-import Titulo from "@/src/components/Titulo";
+import Title from "@/src/components/Title";
 import CustomWebView from "@/src/components/navigation/WebView";
 import { theme } from '@/src/theme';
 
@@ -20,7 +20,7 @@ export default function UMEScreen() {
 		<CustomWebView url={url} />
 		: (
 			<View style={styles.container}>
-				<Titulo title="UME BA" />
+				<Title text="UME BA" />
 				<CustomButton
 					title="Pré-Teste"
 					onPress={() => handlePress(links.BA.UME.Pré)}

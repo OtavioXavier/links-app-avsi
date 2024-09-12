@@ -3,7 +3,7 @@ import { StyleSheet, View, Text, Pressable } from "react-native";
 import { useState } from "react";
 import { useGo } from "@/src/context/GoContext";
 import CustomButton from "@/src/components/CustomButton";
-import Titulo from "@/src/components/Titulo";
+import Title from "@/src/components/Title";
 import CustomWebView from "@/src/components/navigation/WebView";
 import { theme } from '@/src/theme';
 
@@ -20,7 +20,7 @@ export default function MuseuScreen() {
 		:
 		(
 			<View style={styles.container}>
-				<Titulo title="Museu" />
+				<Title text="Museu" />
 				<CustomButton
 					title="Pré-Teste"
 					onPress={() => onPressButton(links.BA.Museu.Pré)}

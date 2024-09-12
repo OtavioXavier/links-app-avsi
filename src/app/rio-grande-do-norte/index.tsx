@@ -1,13 +1,13 @@
 import { View, Text, StyleSheet } from "react-native";
-import AuthButton from "@/src/components/AuthButton";
-import Titulo from "@/src/components/Titulo";
+import AuthLink from "@/src/components/AuthLink";
+import Title from "@/src/components/Title";
 import { theme } from '@/src/theme';
 
 export default function RioGrandeDoNorteScreen() {
 	return (
 		<View style={styles.container}>
-			<Titulo title="Rio Grande do Norte" />
-			<AuthButton
+			<Title text="Rio Grande do Norte" />
+			<AuthLink
 				title={"EcoPosto"}
 				rota={"/rio-grande-do-norte/ecoposto"}
 				senha="Rn@2024"

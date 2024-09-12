@@ -1,6 +1,6 @@
 import CustomButton from "@/src/components/CustomButton";
 import CustomWebView from "@/src/components/navigation/WebView";
-import Titulo from "@/src/components/Titulo";
+import Title from "@/src/components/Title";
 import { useGo } from "@/src/context/GoContext";
 import { links } from "@/links";
 import { useState } from "react";
@@ -24,7 +24,7 @@ export default function EspacoUsinaSolarScreen() {
 			<View
 				style={styles.container}
 			>
-				<Titulo title="Espaço Usina Solar" />
+				<Title text="Espaço Usina Solar" />
 				<CustomButton
 					title="Ficha de Avaliação"
 					onPress={() => onPressButton(links.PE.EspaçoUsinaSolar.Satisfação)}

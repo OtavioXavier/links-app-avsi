@@ -1,6 +1,6 @@
 import CustomButton from "@/src/components/CustomButton";
 import CustomWebView from "@/src/components/navigation/WebView";
-import Titulo from "@/src/components/Titulo";
+import Title from "@/src/components/Title";
 import { useGo } from "@/src/context/GoContext";
 import { links } from "@/links";
 import { Link } from "expo-router";
@@ -22,16 +22,16 @@ export default function EspacoMakerScreen() {
 		: (
 			<View style={styles.largestContainer}>
 				<View style={styles.container}>
-					<Titulo title="Oficinas" />
+					<Title text="Oficinas" />
 					<Link push href={"/bahia/espaco-maker/arduino"} style={styles.containerLink}>
-						<Text style={styles.text}>Arduino</Text>
+						<Text style={styles.text}>ARDUINO</Text>
 					</Link>
 					<Link push href={"/bahia/espaco-maker/eolica"} style={styles.containerLink}>
-						<Text style={styles.text}>Eólica</Text>
+						<Text style={styles.text}>EÓLICA</Text>
 					</Link>
 				</View>
 				<View style={styles.container}>
-					<Titulo title="Satisfação" />
+					<Title text="Satisfação" />
 					<CustomButton
 						title="Ficha de avaliação"
 						onPress={() => onPressButton(links.BA.EspacoMaker.Satisfação)}
@@ -47,22 +47,26 @@ const styles = StyleSheet.create({
 		flex: 1,
 		justifyContent: "center",
 		alignItems: "center",
-		gap: 16,
+		gap: 12,
 		backgroundColor: theme.colors.white
 	},
 	container: {
 		justifyContent: "center",
 		alignItems: "center",
-		gap: 16,
+		gap: 10,
 	},
 	containerLink: {
 		backgroundColor: theme.colors.lightGreen,
+		padding: 15,
+		alignItems: "center",
 		color: theme.colors.white,
 		fontWeight: "semibold",
-		width: 250,
-		paddingVertical: 16,
+		fontSize: 20,
+		width: 300,
+		paddingVertical: 20,
 		borderRadius: 100,
 		textAlign: "center",
+		alignContent: "center",
 	},
 	text: {
 		color: "white",

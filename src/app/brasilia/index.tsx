@@ -1,13 +1,13 @@
-import AuthButton from "@/src/components/AuthButton";
-import Titulo from "@/src/components/Titulo";
+import AuthLink from "@/src/components/AuthLink";
+import Title from "@/src/components/Title";
 import { theme } from '@/src/theme';
 import { StyleSheet, Text, View } from "react-native";
 
 export default function BrasiliaScreen() {
 	return (
 		<View style={styles.container}>
-			<Titulo title="Brasília" />
-			<AuthButton title={"UME"} rota={"/brasilia/ume"} senha="Ume@brb" />
+			<Title text="Brasília" />
+			<AuthLink title={"UME"} rota={"/brasilia/ume"} senha="Ume@brb" />
 		</View>
 	);
 }

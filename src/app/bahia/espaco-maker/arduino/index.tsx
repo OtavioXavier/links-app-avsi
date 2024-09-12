@@ -1,6 +1,6 @@
 import CustomButton from "@/src/components/CustomButton";
 import CustomWebView from "@/src/components/navigation/WebView";
-import Titulo from "@/src/components/Titulo";
+import Title from "@/src/components/Title";
 import { useGo } from "@/src/context/GoContext";
 import { theme } from '@/src/theme';
 import { useState } from "react";
@@ -26,7 +26,7 @@ export default function ArduinoScreen() {
 		<CustomWebView url={url} />
 		: (
 			<View style={styles.container}>
-				<Titulo title="Arduino" />
+				<Title text="Arduino" />
 				<CustomButton
 					title="Pré-Teste"
 					onPress={() => onPressButton(links.preTeste)}

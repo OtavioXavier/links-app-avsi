@@ -1,19 +1,19 @@
-import AuthButton from "@/src/components/AuthButton";
-import Titulo from "@/src//components/Titulo";
+import AuthLink from "@/src/components/AuthLink";
+import Title from "@/src//components/Title";
 import { View, StyleSheet } from "react-native";
 import { theme } from '@/src/theme';
 
 export default function BahiaScreen() {
 	return (
 		<View style={styles.container}>
-			<Titulo title="Bahia" />
-			<AuthButton
+			<Title text="Bahia" />
+			<AuthLink
 				title={"Espaço Maker"}
 				rota="/bahia/espaco-maker"
 				senha="Emaker@2024"
 			/>
-			<AuthButton title={"Museu"} rota="/bahia/museu" senha="Museu2024" />
-			<AuthButton title={"UME"} rota="/bahia/ume" senha="UmeBa" />
+			<AuthLink title={"Museu"} rota="/bahia/museu" senha="Museu2024" />
+			<AuthLink title={"UME"} rota="/bahia/ume" senha="UmeBa" />
 		</View>
 	);
 }

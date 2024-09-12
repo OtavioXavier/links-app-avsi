@@ -1,6 +1,6 @@
 import CustomButton from "@/src/components/CustomButton";
 import CustomWebView from "@/src/components/navigation/WebView";
-import Titulo from "@/src/components/Titulo";
+import Title from "@/src/components/Title";
 import { useGo } from "@/src/context/GoContext";
 import { links } from "@/links";
 import { useState } from "react";
@@ -21,7 +21,7 @@ export default function UMEScreen() {
 		:
 		(
 			<View style={styles.container}>
-				<Titulo title="UME PE" />
+				<Title text="UME PE" />
 				<CustomButton
 					title="Pré-Teste"
 					onPress={() => onPressButton(links.PE.UME.Pré)}

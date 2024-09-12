@@ -1,10 +1,10 @@
 import CustomButton from "@/src/components/CustomButton";
 import CustomWebView from "@/src/components/navigation/WebView";
-import Titulo from "@/src/components/Titulo";
+import Title from "@/src/components/Title";
 import { useGo } from "@/src/context/GoContext";
 import { theme } from '@/src/theme';
 import { useState } from "react";
-import { StyleSheet, View, Text, Pressable } from "react-native";
+import { StyleSheet, View } from "react-native";
 
 const links = {
 	preTeste:
@@ -26,7 +26,7 @@ export default function EolicaScreen() {
 		<CustomWebView url={url} />
 		: (
 			<View style={styles.container}>
-				<Titulo title="Eolica" />
+				<Title text="Eólica" />
 				<CustomButton
 					title="Pré-Teste"
 					onPress={() => onPressButton(links.preTeste)}

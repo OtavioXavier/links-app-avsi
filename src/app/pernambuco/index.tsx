@@ -1,14 +1,14 @@
-import AuthButton from "@/src/components/AuthButton";
-import Titulo from "@/src/components/Titulo";
+import AuthLink from "@/src/components/AuthLink";
+import Title from "@/src/components/Title";
 import { theme } from '@/src/theme';
 import { View, Text, StyleSheet } from "react-native";
 
 export default function PernambucoScreen() {
 	return (
 		<View style={styles.container}>
-			<Titulo title="Pernambuco" />
-			<AuthButton title={"UME"} rota={"/pernambuco/ume"} senha="Ume@pe2024" />
-			<AuthButton
+			<Title text="Pernambuco" />
+			<AuthLink title={"UME"} rota={"/pernambuco/ume"} senha="Ume@pe2024" />
+			<AuthLink
 				title={"Espaço Usina Solar"}
 				rota={"/pernambuco/espaco-usina-solar"}
 				senha="Fnoronha@"
